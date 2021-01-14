@@ -1,14 +1,13 @@
-version: '3.7'
+version: "3.3"
+
 services:
-  react-docker-app:
-    container_name: react-docker-app
+  nextjs-do-scg:
+    ports:
+      - 3000:3000
     build:
       context: .
-      dockerfile: Dockerfile
-    command: npm start
-    restart: always
+      dockerfile: docker/Dockerfile
     volumes:
-      - .:/usr/src/app:cached
+      - .:/usr/src/app
       - /usr/src/app/node_modules
-    ports:
-      - "3000:3000"
+      - /usr/src/app/.next
