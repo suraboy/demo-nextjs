@@ -2,6 +2,7 @@ version: "3.3"
 
 services:
   nextjs-do-scg:
+    container_name: nextjs-do-scg
     ports:
       - 3000:3000
     build:
