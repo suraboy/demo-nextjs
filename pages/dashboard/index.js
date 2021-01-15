@@ -1,6 +1,6 @@
 import Header from '../../components/partials/header'
 import Footer from '../../components/partials/footer'
-import styles from "../../styles/Home.module.css";
+import styles from '../../styles/Home.module.css'
 import React from "react";
 
 const Dashboard = () => (

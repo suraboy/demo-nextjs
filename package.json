@@ -2,6 +2,7 @@
   "name": "nextjs-do-scg",
   "version": "0.1.0",
   "private": true,
+  "author": "Sirichai Janpan",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -18,7 +19,8 @@
     "next": "10.0.5",
     "react": "17.0.1",
     "react-bootstrap": "^1.4.3",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "fs": "0.0.1-security"
   },
   "devDependencies": {
     "dotenv": "^8.2.0",
@@ -26,6 +28,7 @@
   },
   "browser": {
     "fs": false,
-    "path": false
+    "path": false,
+    "os": false
   }
 }
