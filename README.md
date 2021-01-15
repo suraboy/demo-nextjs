@@ -1,12 +1,9 @@
-Lumen crud api ticket
+NextJS Do Scg
 ======
 
 NOTE
 ----
-Assignment Nipa cloud, by lumen framework in implement project.
-You can import collection postman in project. 
-
-> 1_Lumen_Nipa_cloud.postman_collection.json
+Assignment Scg, by NextJS framework in implement project.
 
 Get Started
 -----------
