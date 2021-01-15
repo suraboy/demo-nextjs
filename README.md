@@ -1,6 +1,8 @@
 NextJS Do Scg
 ======
 
+i has problem in setup docker for curl backend api , If any mistake, apologize.
+
 NOTE
 ----
 Assignment Scg, by NextJS framework in implement project.
