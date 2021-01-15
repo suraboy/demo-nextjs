@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "author": "Sirichai Janpan",
+  "proxy": "http://127.0.0.1:6319",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -20,7 +21,8 @@
     "react": "17.0.1",
     "react-bootstrap": "^1.4.3",
     "react-dom": "17.0.1",
-    "fs": "0.0.1-security"
+    "fs": "0.0.1-security",
+    "webpack": "latest"
   },
   "devDependencies": {
     "dotenv": "^8.2.0",

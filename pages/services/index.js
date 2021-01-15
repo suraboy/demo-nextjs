@@ -5,7 +5,7 @@ import services from '../../styles/Sevice.module.css';
 import React, {Component} from 'react';
 import {Tabs, Tab} from 'react-bootstrap';
 import {callDoScg, callXYZ, callABC, callMap} from '../../api/doscgService'
-import {Container, Row, Col, Accordion, Card, Button} from "react-bootstrap";
+import {Container, Row, Col, Card} from "react-bootstrap";
 
 class Services extends Component {
     constructor(props) {
@@ -144,14 +144,15 @@ class Services extends Component {
                                     <Row>
                                         <Col md="auto" className={services.titleMap}>
                                             <h5>
-                                                Central World - SCG Bangsue {'  '}  ({this.state.output.distance}{' , '}{this.state.output.duration})
+                                                Central World - SCG
+                                                Bangsue {'  '} ({this.state.output.distance}{' , '}{this.state.output.duration})
                                             </h5>
                                         </Col>
                                     </Row>
                                     <Col md="auto">
                                         <div className={services.margin10}>
                                             {
-                                                this.state.googleMap.map((item, i) => {
+                                                this.state.googleMap.map((item) => {
                                                     return (
                                                         <Card className={services.routeMap}>
                                                             <Card.Header>
