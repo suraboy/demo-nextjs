@@ -1,7 +1,7 @@
 NextJS Do Scg
 ======
 
-i has problem in setup docker for curl backend api , If any mistake, apologize.
+I have problem in setup docker for curl backend api , If any mistake, apologize.
 
 NOTE
 ----
