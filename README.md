@@ -23,7 +23,15 @@ To run this application on your machine, you need at least:
 
 Application flow pattern:
 ---------------------
-https://github.com/suraboy/nextjs-do-scg
+> https://github.com/suraboy/nextjs-do-scg
+
+Run the docker for development:
+---------------------
+First you run `nestjs-doscg` project for start backend api.
+
+You can pull backend and run the containers in the background, use following command inside project.
+
+> https://github.com/suraboy/nestjs-do-scg
 
 
 Installing Dependencies via Composer
