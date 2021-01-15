@@ -4,7 +4,7 @@ services:
   nextjs-do-scg:
     container_name: nextjs-do-scg
     ports:
-      - 3000:3000
+      - 6318:3000
     build:
       context: .
       dockerfile: docker/Dockerfile
@@ -12,3 +12,7 @@ services:
       - .:/usr/src/app
       - /usr/src/app/node_modules
       - /usr/src/app/.next
+    environment:
+      CORSHEADER: "http://localhost:6319"
+      PROXY: "true"
+      HTTPS_METHOD: noredirect # support both http and https
