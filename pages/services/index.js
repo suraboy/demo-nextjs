@@ -28,6 +28,8 @@ class Services extends Component {
         return await callDoScg()
             .then((res) => {
                 this.setState({doScg: res})
+            }).catch(()=>{
+                alert('เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง.')
             })
     }
 
@@ -38,6 +40,8 @@ class Services extends Component {
                     question: res.question,
                     answer: res.response
                 })
+            }).catch(()=>{
+                alert('เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง.')
             })
     }
 
@@ -48,6 +52,8 @@ class Services extends Component {
                     question: res.question,
                     answer: res.response
                 })
+            }).catch(()=>{
+                alert('เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง.')
             })
     }
 
@@ -58,6 +64,8 @@ class Services extends Component {
                 this.setState({
                     googleMap: res.routes[0].legs[0].steps
                 })
+            }).catch(()=>{
+                alert('เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง.')
             })
     }
 
@@ -145,7 +153,7 @@ class Services extends Component {
                                         <Col md="auto" className={services.titleMap}>
                                             <h5>
                                                 Central World - SCG
-                                                Bangsue {'  '} ({this.state.output.distance}{' , '}{this.state.output.duration})
+                                                Bangsue {'  '} ({this.state.output.distance ?? 0}{' , '}{this.state.output.duration ?? 0})
                                             </h5>
                                         </Col>
                                     </Row>
