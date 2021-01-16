@@ -31,7 +31,11 @@ export const callABC = async () => {
 }
 
 export const callMap = async () => {
-    return await axios.get("v1/doscg/map")
+    const params = {
+        origin: 'Central World',
+        destination: 'SCGBangsue',
+    }
+    return await axios.get("v1/doscg/map", {params: params})
         .then(response => {
             return response.data;
         })
