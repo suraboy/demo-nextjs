@@ -4,8 +4,8 @@ const webpack = require('webpack')
 module.exports = {
     optionalCatchAll: true,
     env: {
-        'BACKEND_API': 'http://localhost:6319',
-        'PORT': '8000'
+        'BACKEND_API': process.env.BACKEND_API ? process.env.BACKEND_API : 'http://localhost:6319',
+        'PORT': process.env.PORT ? process.env.PORT : '8000'
     },
     async rewrites() {
         return [
