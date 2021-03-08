@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
@@ -21,8 +22,7 @@
     "react": "17.0.1",
     "react-bootstrap": "^1.4.3",
     "react-dom": "17.0.1",
-    "fs": "0.0.1-security",
-    "webpack": "latest"
+    "fs": "0.0.1-security"
   },
   "devDependencies": {
     "dotenv": "^8.2.0",
