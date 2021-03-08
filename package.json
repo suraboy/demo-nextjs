@@ -32,5 +32,6 @@
     "fs": false,
     "path": false,
     "os": false
-  }
+  },
+  "cacheDirectories": [".next/cache"]
 }

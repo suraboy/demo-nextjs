@@ -28,7 +28,7 @@ class Services extends Component {
         return await callDoScg()
             .then((res) => {
                 this.setState({doScg: res})
-            }).catch(()=>{
+            }).catch(() => {
                 alert('เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง.')
             })
     }
@@ -40,7 +40,7 @@ class Services extends Component {
                     question: res.question,
                     answer: res.response
                 })
-            }).catch(()=>{
+            }).catch(() => {
                 alert('เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง.')
             })
     }
@@ -52,7 +52,7 @@ class Services extends Component {
                     question: res.question,
                     answer: res.response
                 })
-            }).catch(()=>{
+            }).catch(() => {
                 alert('เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง.')
             })
     }
@@ -64,7 +64,7 @@ class Services extends Component {
                 this.setState({
                     googleMap: res.routes[0].legs[0].steps
                 })
-            }).catch(()=>{
+            }).catch(() => {
                 alert('เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง.')
             })
     }
