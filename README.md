@@ -55,3 +55,7 @@ Open the browser
 ```bash
 http://localhost:3000
 ```
+Production the browser by heroku
+```bash
+https://nextjs-scg-app.herokuapp.com
+```
